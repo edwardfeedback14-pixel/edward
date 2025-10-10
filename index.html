@@ -6,20 +6,46 @@
     <Title>Edward Empire</Title>
     <link rel="stylesheet" href="Website.css" />
 </head>
+<style>
+    body{
+        background-color: #333333;
+    }
+    .glow-text{
+        animation-name: glow;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-timing-function: linear;
+    }
+    @keyframes glow{
+        0% {
+            text-shadow: 0 0 15px red;
+            color: red;
+        }
+        50% {
+            text-shadow: 0 0 15px green;
+            color: green;
+        }
+        100% {
+            text-shadow: 0 0 15px blue;
+            color: blue;
+        }
+    }
+</style>
 <body>
     <header>
-        <h2>Edward Frank</h2>
+        <h2 class="glow-text">Edward Frank</h2>
     </header>
+
     <section id="about me">
         <h1>About Edward</h1>
         <p>Young, Determined, Entrepreneur</p>
     </section>
     <section id="stuff">
         <!--come back to this, links to my shit.-->
-        <h1>Edward</h1>
-        <p>Edward... Ohhh....</p>
+        <h3>Edward</h3>
+        <p>Edward... Ohhh.... Edward....</p>
     </section>
 
 
 </body>
-
