@@ -1,3 +1,5 @@
+
+
 h2
 {
     color: red;
@@ -58,6 +60,16 @@ img
     display: block;
     width: 100%;     
     margin: 0 auto;
+    height: auto;
+    cursor: pointer;
+}
+.img2
+{
+    max-width: 800px;  
+    display: block;
+    width: 100%;     
+    margin-left: 0;
+    margin-right: auto;
     height: auto;
     cursor: pointer;
 }
