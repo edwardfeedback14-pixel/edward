@@ -31,13 +31,33 @@ p
 
 
 
-body
+.background
 {
-    background-image: url('BG1.GIF');
+    margin: 0;
+    height: 200vh; 
+    background-image: url('BG1.GIF'); 
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
+    background-attachment: scroll;
+}
+.background2
+{
     margin: 0;
-    height: 100vh;
+    height: 200vh; 
+    background-image: url('BG2.jpg'); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+}
+
+img
+{
+    max-width: 400px;  
+    display: block;
+    width: 100%;     
+    margin: 0 auto;
+    height: auto;
+    cursor: pointer;
 }
