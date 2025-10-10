@@ -7,8 +7,36 @@
     <link rel="stylesheet" href="Website.css" />
 </head>
 <style>
+
     body{
+        margin: 0;
         background-color: #333333;
+        overflow-x: hidden;
+    }
+    .background, .background2 {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        transition: opacity 1s ease-in-out;
+        z-index: -1;
+    }
+
+    .background {
+        background-image: url('BG1.GIF');
+        opacity: 1;
+    }
+
+    .background2 {
+        background-image: url('BG2.jpg');
+        opacity: 0;
+    }
+    section
+    {
+        height: 150vh;
     }
     .glow-text{
         animation-name: glow;
@@ -33,19 +61,33 @@
     }
 </style>
 <body>
+    <div class="background"></div>
+    <div class="background2"></div>
     <header>
         <h2 class="glow-text">Edward Frank</h2>
     </header>
+    
 
     <section id="about me">
         <h1>About Edward</h1>
-        <p>Young, Determined, Entrepreneur</p>
-    </section>
-    <section id="stuff">
-        <!--come back to this, links to my shit.-->
-        <h3>Edward</h3>
-        <p>Edward... Ohhh.... Edward....</p>
+        <p>Young, Determined, Entrepreneur.
+        </p>
+        <p>
+            THUG. Truly, Humble, Under, God.
+        </p>
+        <p>
+            I believe in hard work and dedication.
+        </p>
+        <p>
+            If you want to win the lottery, you have to make the money to buy a ticket.
+        </p>
     </section>
 
+    <section id="Phone">
+        <img id="phoneImage" src="Phone.png" alt="PhoneImage">
+    </section>
+    <script src="Website.js">
+    </script>
+    
 
 </body>
