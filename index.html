@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="Website.css" />
 </head>
 <style>
-
     body{
         margin: 0;
         background-color: #333333;
@@ -36,7 +35,7 @@
     }
     section
     {
-        height: 150vh;
+        height: 120vh;
     }
     .glow-text{
         animation-name: glow;
@@ -48,14 +47,17 @@
     @keyframes glow{
         0% {
             text-shadow: 0 0 15px red;
+            transform: rotate(0deg);
             color: red;
         }
         50% {
             text-shadow: 0 0 15px green;
+            transform: rotate(-10deg);
             color: green;
         }
         100% {
             text-shadow: 0 0 15px blue;
+            transform: rotate(10deg);
             color: blue;
         }
     }
@@ -68,27 +70,46 @@
     </header>
     
 
-    <section id="about me">
+    <section id="about">
         <h1>About Edward</h1>
-        <p>Young, Determined, Entrepreneur.
+        <p>
+            Rising Entrepreneur.
         </p>
         <p>
             THUG. Truly, Humble, Under, God.
         </p>
         <p>
-            I believe in hard work and dedication.
-        </p>
-        <p>
             If you want to win the lottery, you have to make the money to buy a ticket.
         </p>
+        <pre id="zone" class="glow-text";
+        style="color: glow; 
+        font-family:monospace; 
+        font-size:25px; 
+        line-height:25px;
+        text-align: left;
+        display: block;
+        overflow: visible;">
+        </pre>
+        
     </section>
+    <section>
+        <h4>
+            Products
+        </h4>
+        <p>
+            <h4 class="glow-text">Bloodshot Eyes</h4>
+            <img id="game1Image" src="Game1Logo.png" alt="Game1Image">
+            <h4 class="glow-text">Labyrinth Hotel</h4>
+            <img id="game2Image" src="Game2Logo.png" alt="Game2Image">
+
+        </p>
+    </section>
+    
 
     <section id="Phone">
         <img id="phoneImage" src="Phone.png" alt="PhoneImage">
     </section>
-    <section id="CalvinKlein">
-        <img id="calvinKlein" src="CalvinKlein.png" class="img2">
-    </section>
+
     <script src="Website.js">
     </script>
     
