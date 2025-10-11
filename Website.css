@@ -1,5 +1,4 @@
 
-
 h2
 {
     color: red;
@@ -7,6 +6,7 @@ h2
     font-family: 'Times New Roman', Times, serif;
     font-size: 100px;
 }
+
 h1
 {
     color: white;
@@ -23,6 +23,14 @@ h3
     font-size: x-large;
     margin-top: 170px;
 }
+h4
+{
+    color: white;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: xx-large;
+    margin-top: 10px;
+}
 p
 {
     color: white;
@@ -30,6 +38,9 @@ p
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: medium;
 }
+
+
+
 
 
 
@@ -63,13 +74,5 @@ img
     height: auto;
     cursor: pointer;
 }
-.img2
-{
-    max-width: 800px;  
-    display: block;
-    width: 100%;     
-    margin-left: 0;
-    margin-right: auto;
-    height: auto;
-    cursor: pointer;
-}
+
+
