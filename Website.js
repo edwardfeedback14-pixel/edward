@@ -35,65 +35,164 @@
     function sumBullshit() {
     const zone = document.querySelector('#zone');
     const fps = [
-        `
+    `
 
+        EEEEEEEEE
+E
+      EEEEEEE
+E
+        EEEEEEEEE
 
+    DDDDD
+      D    DD
+        D      DD
+      D    DD
+    DDDDD
 
+    W       W
+    W       W
+     W  W  W
+     W W W W
+      W   W
 
+        A
+       A A
+      A   A
+     AAAAAAA
+    A       A
 
+    RRRRRRR
+      R      RR
+    RRRRRRR
+     R      R
+      R       R
 
+    DDDDD
+      D    DD
+        D      DD
+      D    DD
+    DDDDD
 
+    `,
+    `
 
-                    EEEEE  DDDD    W       W      A      RRRR    DDDD
-                    E      D   D   W       W     A A     R  RR   D   D
-                    EEEE   D    D   W  W  W     A   A    RRR     D    D
-                    E      D   D    W W W W    AAAAAAA   R  R    D   D
-                    EEEEE  DDDD      W   W    A       A  R   R   DDDD     `,
-        `
+        eeeeeeeee
+e
+      eeeeeee
+e
+        eeeeeeeee
 
+    ddddd
+      d    dd
+        d      dd
+      d    dd
+    ddddd
 
+    w       w
+    w       w
+     w  w  w
+     w w w w
+      w   w
 
+        a
+       a a
+      a   a
+     aaaaaaa
+    a       a
 
+    rrrrrrr
+      r      rr
+    rrrrrrr
+     r      r
+      r       r
 
+    ddddd
+      d    dd
+        d      dd
+      d    dd
+    ddddd
 
+    `,
+    `
 
+        111111111
+1
+      1111111
+1
+        111111111
 
-                    eeeee  dddd    w       w      a      rrrr    dddd
-                    e      d   d   w       w     a a     r  rr   d   d
-                    eeee   d    d   w  w  w     a   a    rrr     d    d
-                    e      d   d    w w w w    aaaaaaa   r  r    d   d
-                    eeeee  dddd      w   w    a       a  r   r   dddd     `,
+    22222
+      2    22
+        2      22
+      2    22
+    22222
 
-        `
+    3       3
+    3       3
+     3  3  3
+     3 3 3 3
+      3   3
 
+        4
+       4 4
+      4   4
+     4444444
+    4       4
 
+    5555555
+      5      55
+    5555555
+     5      5
+      5       5
 
+    66666
+      6    66
+        6      66
+      6    66
+    66666
 
+    `,
+    `
 
+        .........
+.
+      .......
+.
+        .........
 
+    /////
+      /    //
+        /      //
+      /    //
+    /////
 
+    !       !
+    !       !
+     !  !  !
+     ! ! ! !
+      !   !
 
-                    11111  2222    3       3      4      5555    6666
-                    1      2   2   3       3     4 4     5  55   6   6
-                    1111   2    2   3  3  3     4   4    555     6    6
-                    1      2   2    3 3 3 3    4444444   5  5    6   6
-                    11111  2222      3   3    4       4  5   5   6666     `,
-        `
+        |
+       | |
+      |   |
+     |||||||
+    |       |
 
+    ??????
+      ?     ??
+    ??????
+     ?     ?
+      ?      ?
 
+    ~~~~~
+      ~    ~~
+        ~      ~~
+      ~    ~~
+    ~~~~~
 
-
-        
-
-
-
-                    .....  ////    !       !      |      ???     ~~~~
-                    .      /   /   !       !     | |     ?  ??   ~   ~
-                    ....   /    /   !  !  !     |   |    ???     ~    ~
-                    .      /   /    ! ! ! !    |||||||   ?  ?    ~   ~
-                    .....  ////      !   !    |       |  ?   ?   ~~~~     
-        `
+    `
     ];
+
     let i = 0;
     setInterval(() => {
         zone.textContent = `${fps[i % fps.length]}`;
@@ -101,3 +200,4 @@
     }, 100);
 }
 sumBullshit();
+
