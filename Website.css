@@ -9,10 +9,10 @@ h2
 
 h1
 {
-    color: white;
+    color: burlywood;
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: x-large;
+    font-size: xx-large;
     margin-top: 220px;
 }
 h3
@@ -25,7 +25,7 @@ h3
 }
 h4
 {
-    color: white;
+    color: burlywood;
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: xx-large;
@@ -36,7 +36,7 @@ p
     color: white;
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: medium;
+    font-size: x-large;
 }
 
 
@@ -58,7 +58,27 @@ p
 {
     margin: 0;
     height: 200vh; 
-    background-image: url('BG2.jpg'); 
+    background-image: url('BG2.GIF'); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+}
+.background3
+{
+    margin: 0;
+    height: 200vh; 
+    background-image: url('BG3.GIF'); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+}
+.background4
+{
+    margin: 0;
+    height: 200vh; 
+    background-image: url('BG4.GIF'); 
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -74,5 +94,8 @@ img
     height: auto;
     cursor: pointer;
 }
+
+
+
 
 
