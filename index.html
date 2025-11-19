@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <Title>Edward Empire</Title>
+    <Title>Edward Portfolio</Title>
     <link rel="stylesheet" href="Website.css" />
 </head>
 <style>
@@ -12,7 +12,7 @@
         background-color: #333333;
         overflow-x: hidden;
     }
-    .background, .background2 {
+    .background, .background2, .background3, .background4 {
         position: fixed;
         top: 0;
         left: 0;
@@ -30,12 +30,23 @@
     }
 
     .background2 {
-        background-image: url('BG2.jpg');
+        background-image: url('BG2.GIF');
+        opacity: 0;
+    }
+    .background3 {
+        background-image: url('BG3.GIF');
+        opacity: 0;
+    }
+    .background4 {
+        background-image: url('BG4.GIF');
         opacity: 0;
     }
     section
     {
         height: 120vh;
+    }
+    #about {
+        height: auto;
     }
     .glow-text{
         animation-name: glow;
@@ -44,19 +55,36 @@
         animation-direction: alternate;
         animation-timing-function: linear;
     }
+    .muted-glow-text{
+        animation-name: muted-glow;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-timing-function: linear;
+    }
+    @keyframes muted-glow{
+        0% {
+            text-shadow: 0 0 25px aqua;
+            color: aqua;
+        }
+        100% {
+            text-shadow: 0 0 25px purple;
+            color: purple;
+        }
+    }
     @keyframes glow{
         0% {
-            text-shadow: 0 0 15px red;
+            text-shadow: 0 0 25px red;
             transform: rotate(0deg);
             color: red;
         }
         50% {
-            text-shadow: 0 0 15px green;
+            text-shadow: 0 0 25px green;
             transform: rotate(-10deg);
             color: green;
         }
         100% {
-            text-shadow: 0 0 15px blue;
+            text-shadow: 0 0 25px blue;
             transform: rotate(10deg);
             color: blue;
         }
@@ -65,55 +93,62 @@
 <body>
     <div class="background"></div>
     <div class="background2"></div>
+    <div class="background3"></div>
+    <div class="background4"></div>
     <header>
         <h2 class="glow-text">Edward Frank</h2>
+
+        <h4 class="glow-text">Some ambient background music while browsing:</h4>
+        <img id="phoneImage" src="Phone.png" alt="PhoneImage">
     </header>
+
     
 
-    <section id="about">
-        <h1>About Edward</h1>
-        <p>
-            Rising Entrepreneur.
+    <section id="about" style ="background-color: black;">
+        <h1 class="muted-glow-text"> About </h1>
+        <p class="muted-glow-text">
+            Passionate film and television fan.
         </p>
-        <p>
-            THUG. Truly, Humble, Under, God.
+        <p class="muted-glow-text">
+            Raised 19 years in Lucca, Tuscany, Italy.
         </p>
-        <p>
-            If you want to win the lottery, you have to make the money to buy a ticket.
+        <p class="muted-glow-text">
+            Studied and graduated with a degree in Design.
         </p>
-        <pre id="zone" class="glow-text";
-        style="color: glow; 
+        <p class="muted-glow-text">
+            Hobby game developer and digital music producer.
+        </p>
+    </section>
+    <section>
+        <h1 class="glow-text">Shots of Lucca montage:</h1>
+        <div style="display: flex; justify-content: center; align-items: center; padding: 20px;">
+            <video src="VIDEO2.mp4" autoplay loop muted playsinline controls style="width: 1200px; height: 675px; border: 2px solid whitesmoke; box-shadow: 0 0 0; border-radius: 8px;"></video>
+        </div>
+    </section>
+    <section>
+        <h4 class="muted-glow-text">
+            Videogames by me:
+        </h4>
+        <p>
+            <h4 class="glow-text">Bloodshot Eyes(WIP):</h4>
+            <img id="game1Image" src="Game1Logo.png" alt="Game1Image">
+            <h4 class="glow-text">Labyrinth Hotel:</h4>
+            <img id="game2Image" src="Game2Logo.png" alt="Game2Image">
+        </p>
+    </section>
+
+    <pre id="vortexSpace" 
+        style="color: whitesmoke; 
         font-family:monospace; 
         font-size:22px; 
         line-height:22px;
-        text-align: left;
+        text-align: center;
         display: block;
         overflow: visible;">
-        </pre>
-        
-    </section>
-    <section>
-        <h4>
-            Products
-        </h4>
-        <p>
-            <h4 class="glow-text">Bloodshot Eyes</h4>
-            <img id="game1Image" src="Game1Logo.png" alt="Game1Image">
-            <h4 class="glow-text">Labyrinth Hotel</h4>
-            <img id="game2Image" src="Game2Logo.png" alt="Game2Image">
-
-        </p>
-    </section>
-    
-
-    <section id="Phone">
-        <img id="phoneImage" src="Phone.png" alt="PhoneImage">
-    </section>
+    </pre>
 
     <script src="Website.js">
     </script>
     
 
 </body>
-
-
