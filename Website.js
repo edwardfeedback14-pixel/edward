@@ -81,7 +81,7 @@
     img3.addEventListener('click', () => {
         window.location.href = 'https://store.steampowered.com/app/2948940';
     });
-  function OpticalIllusion(Id = "vortexSpace", width = 150, height = 50, centerText = "THANKS FOR CHECKING OUT MY SITE!")
+  function OpticalIllusion(Id = "vortexSpace", width = 80, height = 50, centerText = "THANKS FOR CHECKING OUT MY SITE!")
   {
     let time = 0;
     const X = width;
@@ -126,4 +126,5 @@
     }
     render();
   }
-  OpticalIllusion("vortexSpace", 150, 50, "THANKS FOR CHECKING OUT MY SITE!");
+  OpticalIllusion("vortexSpace", 80, 50, "THANKS FOR CHECKING OUT MY SITE!");
+
